@@ -1,0 +1,112 @@
+:root {
+    --color1: #A77C5D;
+    --color2: #F4E8DE;
+    --color3: #332317;
+    --color4: #997052;
+    --color5: #EDDACA;
+    --cat1-color: #490C97;
+    --cat2-color: #0C5497;
+    --cat3-color: #49970C;
+    --cat4-color: #970C0C;
+    --fade-cat-color: #970C0C33;
+    --additional-dark-color: #A5A5A5;
+    --additional-color: #C4C4C4;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-height: 762px;
+    max-width: 428px;
+    font-family: 'Roboto', serif;
+    row-gap: 24px;
+}
+
+.content {
+    width: 428px;
+    height: 762px;
+    background-color: var(--color2);
+    row-gap: 24px;
+}
+
+/*HEADER*/
+.list {
+    height: 56px;
+    background-color: var(--color1);
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 4px var(--additional-dark-color);
+    grid-template-columns: 0 311px 20px;
+}
+
+.list__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/* MAIN*/
+.entilies {
+
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 44px 147px 84px;
+    align-items: center;
+    height: 108px;
+    width: 404px;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 1px solid var(--color1);
+    box-shadow: 0px 4px 4px var(--additional-color);
+    margin-bottom: 14px;
+}
+
+.entilies__name-title {
+    color: var(--color3);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.entilies__name {
+    display: grid;
+    gap: 16px;
+    grid-template-rows: 36px 46px;
+}
+
+.entilies__name-weight {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.entilies__activit {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 46px;
+}
+
+.entilies__activit-pen {
+    opacity: 0;
+    float: right;
+    transition: .3s ease-in-out;
+}
+
+.entilies__activit-pen:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.entilies__aectivit-date {
+    font-size: 12px;
+}
+
+.catimg_Apofem {
+    fill: var(--cat4-color);
+}
+
+.catimg_Pulheria {
+    fill: var(--cat1-color);
+}
