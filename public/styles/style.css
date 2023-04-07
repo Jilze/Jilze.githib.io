@@ -14,92 +14,108 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    max-height: 762px;
-    max-width: 428px;
     font-family: 'Roboto', serif;
-    row-gap: 24px;
+    background-color: var(--color2);
+    height: 100vh;
 }
 
-.content {
-    width: 428px;
-    height: 762px;
-    background-color: var(--color2);
-    row-gap: 24px;
+.container {
+    max-width: 762px;
+    margin: 0 auto;
 }
 
 /*HEADER*/
-.list {
+.interface {
     height: 56px;
     background-color: var(--color1);
-    display: grid;
+    display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 0 4px 4px var(--additional-dark-color);
-    grid-template-columns: 0 311px 20px;
 }
 
-.list__title {
+.interface__left {
+    display: flex;
+    align-items: center;
+    gap: 16.25px;
+    margin-left: 16.25px;
+}
+
+.interface__right {
+    margin-right: 19px;
+}
+
+.interface__title {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
 }
 
 /* MAIN*/
-.entilies {
-
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: 44px 147px 84px;
-    align-items: center;
-    height: 108px;
-    width: 404px;
-    margin: 0 auto;
-    border-radius: 12px;
-    border: 1px solid var(--color1);
-    box-shadow: 0px 4px 4px var(--additional-color);
-    margin-bottom: 14px;
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 17px;
 }
 
-.entilies__name-title {
+.animal {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: space-between;
+    border: 1px solid var(--color1);
+    box-shadow: 0 4px 4px var(--additional-color);
+    height: 106px;
+    margin: 0 12px;
+}
+
+.animal__left {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    gap: 24px;
+}
+
+.cat__name {
     color: var(--color3);
     font-size: 24px;
     font-weight: 400;
     line-height: 28px;
 }
 
-.entilies__name {
+.cat {
     display: grid;
     gap: 16px;
     grid-template-rows: 36px 46px;
 }
 
-.entilies__name-weight {
+.entilies__weight {
     font-size: 16px;
     line-height: 24px;
 }
 
-.entilies__activit {
+.animal__right {
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 46px;
+    margin-right: 16.25px;
 }
 
-.entilies__activit-pen {
+.animal__right-pen {
+    margin-bottom: 49.25px;
     opacity: 0;
     float: right;
     transition: .3s ease-in-out;
 }
 
-.entilies__activit-pen:hover {
+.animal__right-pen:hover {
     opacity: 1;
     transform: scale(1.2);
     cursor: pointer;
 }
 
-.entilies__aectivit-date {
+.animal__right-date {
     font-size: 12px;
 }
 
