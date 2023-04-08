@@ -17,11 +17,13 @@ body {
     font-family: 'Roboto', serif;
     background-color: var(--color2);
     height: 100vh;
+
 }
 
 .container {
-    max-width: 462px;
+    max-width: 768px;
     margin: 0 auto;
+
 }
 
 /*HEADER*/
@@ -37,18 +39,18 @@ body {
 .interface__left {
     display: flex;
     align-items: center;
-    gap: 16.25px;
-    margin-left: 16.25px;
+    gap: 12px;
+    margin-left: 12px;
 }
 
 .interface__right {
-    margin-right: 19px;
+    margin-right: 12px;
 }
 
 .interface__title {
-    font-weight: 400;
     font-size: 24px;
     line-height: 28px;
+    font-weight:400 ;
 }
 
 /* MAIN*/
@@ -80,8 +82,9 @@ body {
 .cat__name {
     color: var(--color3);
     font-size: 24px;
-    font-weight: 400;
     line-height: 28px;
+    font-weight: 400;
+
 }
 
 .cat {
@@ -90,7 +93,7 @@ body {
     grid-template-rows: 36px 46px;
 }
 
-.entilies__weight {
+.cat__weight {
     font-size: 16px;
     line-height: 24px;
 }
@@ -99,30 +102,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin-right: 16.25px;
+    margin-right: 12px;
 }
 
 .animal__right-pen {
-    margin-bottom: 49.25px;
-    opacity: 0;
-    float: right;
-    transition: .3s ease-in-out;
-}
+    margin-bottom: 47px;
 
-.animal__right-pen:hover {
-    opacity: 1;
-    transform: scale(1.2);
-    cursor: pointer;
+
 }
 
 .animal__right-date {
     font-size: 12px;
 }
 
-.catimg_Apofem {
-    fill: var(--cat4-color);
-}
 
-.catimg_Pulheria {
-    fill: var(--cat1-color);
-}
