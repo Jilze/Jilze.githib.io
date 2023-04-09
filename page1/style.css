@@ -1,0 +1,125 @@
+:root {
+    --color1: #A77C5D;
+    --color2: #F4E8DE;
+    --color3: #332317;
+    --color4: #997052;
+    --color5: #EDDACA;
+    --cat1-color: #490C97;
+    --cat2-color: #0C5497;
+    --cat3-color: #49970C;
+    --cat4-color: #970C0C;
+    --fade-cat-color: #970C0C33;
+    --additional-dark-color: #A5A5A5;
+    --additional-color: #C4C4C4;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    background-color: var(--color2);
+    height: 100vh;
+
+}
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+
+}
+
+/*HEADER*/
+.interface {
+    height: 56px;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 4px var(--additional-dark-color);
+}
+
+.interface__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 12px;
+}
+
+.interface__right {
+    margin-right: 12px;
+}
+
+.interface__title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+/* MAIN*/
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 17px;
+}
+
+.animal .pen {
+    opacity: 0;
+}
+
+.animal:hover .pen {
+    opacity: 1;
+}
+
+.animal {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: space-between;
+    border: 1px solid var(--color1);
+    box-shadow: 0 4px 4px var(--additional-color);
+    height: 106px;
+    margin: 0 12px;
+}
+
+.animal__left {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    gap: 24px;
+}
+
+.cat__name {
+    color: var(--color3);
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+
+}
+
+.cat {
+    display: grid;
+    gap: 16px;
+    grid-template-rows: 36px 46px;
+}
+
+.cat__weight {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.animal__right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 12px;
+    gap: 40px;
+}
+
+
+.animal__right-date {
+    font-size: 12px;
+
+}
+
+
