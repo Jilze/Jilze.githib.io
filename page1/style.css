@@ -17,13 +17,11 @@ body {
     font-family: 'Roboto', serif;
     background-color: var(--color2);
     height: 100vh;
-
 }
 
 .container {
     max-width: 768px;
     margin: 0 auto;
-
 }
 
 /*HEADER*/
